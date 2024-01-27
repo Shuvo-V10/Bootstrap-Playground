@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap 5 example</title>
+    <title>Bootstrap 5 grid example</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <script type="module" src="./src/index.js"></script>
   </head>
-  <body class="p-4">
-    <button class="btn btn-primary">
-      Primary button
-    </button>
-    <button class="btn btn-secondary">
-      Secondary button
-    </button>
+  <body>
+   <div class="container">
+    <div class="row justify-content-center">
+      <!-- going from xs(col) to sm to md..., if the screen gets bigger, it will have the col-sm-4 for all the screens, if the col is not specified -->
+      <!-- for lg,xl and xx, the col width will follow the col-md-4, meaning, col will have width of 4 for md and up -->
+      <!-- only 'col' indicates xs screen--> 
+      <div class="col-sm-2 col-md-4 col-8 bg-primary border text-center">col1</div>
+      <div class="col-sm-2 col-2 bg-primary border text-center">col2</div>
+      <div class="col-sm-2 col-2 bg-primary border text-center">col3</div>
+    </div>
+   </div>
   </body>
 </html>
